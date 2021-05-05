@@ -1,0 +1,5 @@
+set xlabel "n"
+set ylabel "t"
+t(n) = b * n + c 
+fit t(x) "data.txt" using 1:2 via b , c 
+plot "data.txt" using 1:2 , t(x) lw 2
